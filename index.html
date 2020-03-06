@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
    <meta name="viewport"
@@ -13,15 +13,69 @@
    <!--  style  -->
    <link rel="stylesheet" href="assets/css/reset.css">
    <link rel="stylesheet" href="assets/css/style.css">
+
+   <!--  webfonts  -->
+   <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,500,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
+   <nav id="nav">
+      <ul>
+         <li><a href="#">brand</a></li>
+         <li><a href="#">menu</a></li>
+         <li><a href="#">store</a></li>
+         <li><a href="#">community</a></li>
+         <li><a href="#">franchise</a></li>
+      </ul>
+   </nav>
    
-   <header id="header"></header> <!--  //header  -->
-   <section id="contents"></section> <!--  //contents  -->
+   <section id="banner">
+      <header id="header">
+         <div class="container">
+            <div class="row">
+               <div class="header">
+                  <div class="header_logo"></div>
+                  <div class="header_list">
+                     <ul>
+                        <li><a href="#">brand</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">store</a></li>
+                        <li><a href="#">community</a></li>
+                     </ul>
+                  </div>
+                  <div class="header_franchise"></div>
+               </div>
+               <div class="ham">
+                  <span></span>
+               </div>
+            </div>
+         </div>
+      </header> 
+      <!--  //header  -->     
+   </section>
+   <!--  //banner  -->
+  
+   <section id="contents">
+     <section id="store"> 
+         <div class="container">
+            <div class="row">
+               <div class="store_left"></div>
+               <div class="store_right"></div>
+            </div>
+         </div>
+     </section>
+      <!--  //store  -->
+   </section> 
+   <!--  //contents  -->
    <footer id="footer"></footer> <!--  //footer  --> 
    
-   
-   
+   <script src="assets/js/jquery.min_1.12.4.js"></script>
+   <script>
+     let ham = $('.ham');
+      ham.click(function(){
+        $(this).toggleClass('active')
+      });
+   </script>
     
 </body>
 </html>

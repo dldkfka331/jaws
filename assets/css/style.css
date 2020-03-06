@@ -1,0 +1,71 @@
+@font-face { font-family: 'MapoPeacefull'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+/* 전체 */
+body {
+    --font-kr : 'MapoPeacefull';
+    --font-en : 'Yanone Kaffeesatz', sans-serif;
+    --color-red : #9c0a1f;
+}
+#header {background: transparent; border-bottom: 1px solid rgba(255,255,255,.4); transition: background .3s;}
+#banner {height: 810px; background: url(../img/main.jpg) no-repeat center; background-size: cover; }
+#nav{display: none;}
+#store {height: 600px; background: url(../img/section01bg.gif) no-repeat center center; background-size: cover;}
+
+
+.container {width: 1280px; margin: 0 auto;}
+.row {padding: 0 26px;}
+
+/* ham */
+.ham {position: fixed; top: 15px; right: 25px; display: block; width: 30px; height: 10px; padding: 15px 10px;}
+.ham span{display: block; width: 30px; height: 4px; background: #fff; position: relative; transition: all .3s}
+.ham span:before{content: ''; display: block; width: 30px; height: 4px; background: #fff; position: absolute; left: 0; bottom: -7px; transition: all .3s}
+.ham span:after{content: ''; display: block; width: 30px; height: 4px; background: #fff; position: absolute; left: 0; top: -7px; transition: all .3s}
+.ham.active span {background: transparent;}
+.ham.active span:before {background:#fff; bottom: 2px; transform: rotate(45deg)}
+.ham.active span:after {background:#fff; top: -2px; transform: rotate(-45deg)}
+
+
+/* header */
+.header {padding: 15px 0; display: flex; align-items: center; justify-content: space-around;}
+.header_logo {width: 20%; height: 36px; background: url(../img/logo1.png) no-repeat left center; background-size:  134px;}
+.header_list {width: 60%; }
+.header_list ul { }
+.header_list ul li {display: inline-block; width: 20%; }
+.header_list ul li a {color: #fff; font-size: 32px; text-transform: uppercase; font-family: var(--font-en); font-weight: bold; transition: color .3s;}
+.header_franchise {width: 178px; height: 53px; background: url(../img/btn_franchise.png) no-repeat; background-size:  178px; background-position: 0 0;}
+
+#header:hover {background: #fff; cursor: pointer;}
+#header:hover .header_logo {background: url(../img/logo2.png) no-repeat left center; }
+#header:hover .header_list ul li a {color: #000;}
+#header:hover .header_list ul li a:hover {color: var(--color-red)}
+#header:hover .header_franchise  {background-position: 0 -53px;}
+#header:hover .ham span {background: var(--color-red);}
+#header:hover .ham span:before {background: var(--color-red);}
+#header:hover .ham span:after {background: var(--color-red);}
+#header:hover .ham.active span {background: transparent;}
+#header:hover .ham.active span:before {background: var(--color-red);}
+#header:hover .ham.active span:after {background: var(--color-red);}
+
+
+
+
+
+
+/* 미디어 쿼리 */
+@media(max-width : 1280px) {
+    .container {width: 100%;}
+}
+
+@media(max-width : 960px) {
+    #banner {height: 600px}
+    .header {display: block;}
+    .header_logo {width: 134px; margin: 0 auto;}
+    .header_list {display: none;}
+    .header_franchise {display: none;}
+}
+
+@media(max-width : 768px) {
+    #banner {height: 450px}
+ 
+}
