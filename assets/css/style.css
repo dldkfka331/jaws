@@ -10,7 +10,7 @@ body {
 #header {background: transparent; border-bottom: 1px solid rgba(255,255,255,.4); transition: background .3s;}
 #banner {height: 810px; background: url(../img/main.jpg) no-repeat center; background-size: cover; }
 #nav{display: none;}
-#store {height: 600px; background: url(../img/section01bg.gif) no-repeat center center; background-size: cover;}
+#store {height: 600px; background: url(../img/section01bg.gif) no-repeat center center; background-size: cover; padding: 40px 0;}
 
 
 .container {width: 1280px; margin: 0 auto;}
@@ -47,9 +47,11 @@ body {
 #header:hover .ham.active span:before {background: var(--color-red);}
 #header:hover .ham.active span:after {background: var(--color-red);}
 
+/* store */
+.store_left {float: left;}
+.store_right {float: right;}
 
-
-
+.store_tit {font-family: var(--font-en); font-size: 38px; text-transform: uppercase;}
 
 
 /* 미디어 쿼리 */
