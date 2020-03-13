@@ -13,6 +13,7 @@
    <!--  style  -->
    <link rel="stylesheet" href="assets/css/reset.css">
    <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/swiper.css">
 
    <!--  webfonts  -->
    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,500,700&display=swap" rel="stylesheet">
@@ -28,6 +29,7 @@
          <li><a href="#">franchise</a></li>
       </ul>
    </nav>
+    <!--  //nav  -->  
    
    <section id="banner">
       <header id="header">
@@ -54,35 +56,163 @@
       <!--  //header  -->     
    </section>
    <!--  //banner  -->
-  
+
+   <div id="consult">
+      <div class="container">
+         <div class="row">
+            <div class="consult">
+               <h4 class="consult_tit">창업 상담 신청</h4>
+               <div class="consult_input">
+                  <input type="text" id="consult_name" placeholder="이름">
+                  <input type="text" id="consult_contact01" class="consult_contact" placeholder="연락처">
+                  <span>-</span>
+                  <input type="text" id="consult_contact02" class="consult_contact">
+                  <span>-</span>
+                  <input type="text" id="consult_contact03" class="consult_contact">
+               </div>
+               <button class="consult_btn">신청하기</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
    <section id="contents">
      <section id="store"> 
          <div class="container">
             <div class="row clearfix">
-               <div class="store_left">
-                  <h2 class="store_tit">new store</h2>
-                  <p>죠스떡볶이 <span>새 매장을 소개합니다.</span></p>
-                  <button>죠스떡볶이 새 매장 만나기</button>
-               </div>
-               <div class="store_right">
-                  <h2 class="store_tit">store search</h2>
-                  <p>죠스떡볶이 <span>매장, 어디있죠!?</span></p>
-                  <input type="text" placeholder="가까운 지역명을 검색하세요">
+               <div class="store">
+                  <div class="store_left">
+                     <h2 class="store_tit st1">new store</h2>
+                     <p>죠스떡볶이 <span>새 매장을 소개합니다.</span></p>
+                     <button class="store_btn">죠스떡볶이 새 매장 만나기</button>
+                  </div>
+                  <div class="store_right">
+                     <h2 class="store_tit st2">store search</h2>
+                     <p>죠스떡볶이 <span>매장,어디있죠!?</span></p>
+                     <input type="text"  class="store_src" placeholder="가까운 지역명을 검색하세요" >
+                  </div>
                </div>
             </div>
          </div>
      </section>
       <!--  //store  -->
+      <section id="menu">
+         <div class="container">
+            <div class="row">
+               <div class="menu">
+                  <h2 class="menu_tit">jaws menu</h2>
+                  <p>오늘 죠스에서 <span>뭘 먹을까?</span></p>
+                  <button class="menu_btn">죠스떡볶이 전체메뉴 보기</button>
+               </div>
+            </div>
+         </div>
+      </section>
+       <!--  //menu  -->
+       <section id="community">
+         <div class="container">
+            <div class="row">
+              <div class="community">
+               <h2 class="community_tit">jaws community</h2>
+               <p>죠스는 항상 <span>즐겁습니다.</span></p>
+              </div>
+            </div>
+         </div>
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper_slide_style">
+                   <h4 class="swiper_slide_tit">facebook</h4>
+                   <p class="swiper_slide_text">한정판매! #짜장라면 출시!</p>
+                   <img class="swiper_slide_img" src="assets/img/fun05.jpg" alt="짜장라면">
+                </div>
+                <div class="swiper-slide swiper_slide_style">
+                  <h4 class="swiper_slide_tit">facebook</h4>
+                  <p class="swiper_slide_text">순한맛 매운맛 골라먹는 #국물떡볶이 출시!</p>
+                  <img class="swiper_slide_img" src="assets/img/fun06.png" alt="국물떡볶이">
+               </div>
+               <div class="swiper-slide swiper_slide_style">
+                  <h4 class="swiper_slide_tit">facebook</h4>
+                  <p class="swiper_slide_text">성공을 꿈꾸는 예비 창업자라면?</p>
+                  <img class="swiper_slide_img" src="assets/img/fun07.jpg" alt="이미지1">
+               </div>
+               <div class="swiper-slide swiper_slide_style">
+                  <h4 class="swiper_slide_tit">facebook</h4>
+                  <p class="swiper_slide_text">떡볶이 덕후의 방학계획</p>
+                  <img class="swiper_slide_img" src="assets/img/fun04.png" alt="방학계획">
+               </div>
+               <div class="swiper-slide swiper_slide_style">
+                  <h4 class="swiper_slide_tit">facebook</h4>
+                  <p class="swiper_slide_text">#제1회 #죠스문예</p>
+                  <img class="swiper_slide_img" src="assets/img/fun03.png" alt="죠스문예">
+               </div>
+               <div class="swiper-slide swiper_slide_style">
+                  <h4 class="swiper_slide_tit">facebook</h4>
+                  <p class="swiper_slide_text">한정판 #매워죠스 #마라죠스 출시!</p>
+                  <img class="swiper_slide_img" src="assets/img/fun08.png" alt="죠스떡볶이">
+               </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+       <!--  //community  -->
    </section> 
    <!--  //contents  -->
-   <footer id="footer"></footer> <!--  //footer  --> 
+   <footer id="footer">
+      
+   </footer> <!--  //footer  --> 
    
    <script src="assets/js/jquery.min_1.12.4.js"></script>
+   <script src="assets/js/swiper.min.js"></script>
    <script>
+      //햄버거 메뉴
      let ham = $('.ham');
       ham.click(function(){
         $(this).toggleClass('active')
       });
+
+//header 부분
+$(window).scroll(function(){
+   let wScroll = $(window).scrollTop();
+      console.log(wScroll);
+      if(wScroll >= 200){
+         $('#header').addClass('active');
+      }else{
+         $('#header').removeClass('active');
+      }
+});
+
+//swiper
+var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    slidesPerView : 4.5,
+    spaceBetween: 30,
+    autoplay : {
+      delay : 1800
+    },
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+   },
+   breakpoints: {
+        640: {
+          slidesPerView: 1.8,
+          spaceBetween: 10,
+        },
+        960: {
+          slidesPerView: 2.6,
+          spaceBetween: 10,
+        },
+        1280: {
+          slidesPerView: 3.2,
+          spaceBetween: 30,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      }
+  })
+    
    </script>
     
 </body>
